@@ -1,80 +1,94 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vignesh (Vicki) | Salesforce Portfolio & SF4A</title>
-    <!-- Official Salesforce Lightning Design System CSS via CDN -->
+    <title>Salesforce Developer Portfolio</title>
+    <!-- Official Salesforce Lightning Design System (SLDS) CDN -->
     <link rel="stylesheet" href="https://cloudflare.com" />
+    <style>
+        body { background-color: #f3f3f3; }
+        .hero-section { background: linear-gradient(135deg, #1589ee 0%, #014486 100%); color: white; }
+        .nav-sticky { position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
 </head>
-<body class="slds-brand-band slds-brand-band_cover-custom slds-brand-band_medium">
-<link rel="stylesheet" href="https://cloudflare.com" />
+<body>
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="slds-global-header_container">
-        <div class="slds-global-header slds-grid slds-grid_align-spread slds-p-horizontal_medium">
-            <div class="slds-global-header__item">
-                <span class="slds-text-heading_medium slds-text-color_default">
-                    <strong>SF4A</strong> <span class="slds-text-color_weak slds-text-body_small">| Salesforce 4 All</span>
-                </span>
+    <!-- STICKY NAVBAR -->
+    <nav class="nav-sticky slds-theme_default slds-p-vertical_small">
+        <div class="slds-container_large slds-container_center slds-p-horizontal_medium slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+            <div class="slds-text-heading_medium"><strong>SF4A</strong> Portfolio</div>
+            <ul class="slds-grid slds-wrap">
+                <li class="slds-p-horizontal_small"><a href="#skills" class="slds-text-link_reset">Skills</a></li>
+                <li class="slds-p-horizontal_small"><a href="#experience" class="slds-text-link_reset">Experience</a></li>
+                <li class="slds-p-horizontal_small"><a href="#projects" class="slds-text-link_reset">Projects</a></li>
+                <li class="slds-p-horizontal_small"><a href="#blog" class="slds-text-link_reset">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO HEADER -->
+    <header class="hero-section slds-p-vertical_xx-large slds-text-align_center">
+        <div class="slds-container_medium slds-container_center slds-p-horizontal_medium">
+            <h1 class="slds-text-heading_large slds-m-bottom_small">Welcome to My Salesforce Journey</h1>
+            <p class="slds-text-heading_medium slds-m-bottom_medium">Salesforce Administrator & Developer</p>
+            <p class="slds-text-body_regular slds-m-bottom_large">
+                Building robust automations, designing data architectures, and sharing technical guides.
+            </p>
+            <div class="slds-grid slds-grid_align-center slds-gutters">
+                <div class="slds-col"><a href="https://linkedin.com" target="_blank" class="slds-button slds-button_inverse">LinkedIn</a></div>
+                <div class="slds-col"><a href="https://github.com" target="_blank" class="slds-button slds-button_inverse">GitHub</a></div>
             </div>
-            <nav class="slds-global-header__item">
-                <ul class="slds-grid">
-                    <li class="slds-p-horizontal_small"><a href="#about" class="slds-text-link_reset">About</a></li>
-                    <li class="slds-p-horizontal_small"><a href="#projects" class="slds-text-link_reset">Projects</a></li>
-                    <li class="slds-p-horizontal_small"><a href="#youtube" class="slds-text-link_reset">YouTube Channel</a></li>
-                    <li class="slds-p-horizontal_small"><a href="#blog" class="slds-text-link_reset">Blog</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <main class="slds-p-top_xx-large">
-        <section id="about" class="slds-box slds-theme_default slds-m-around_large slds-p-around_large">
-            <div class="slds-text-align_center">
-                <!-- Avatar placeholder matching Salesforce UI -->
-                <span class="slds-avatar slds-avatar_large slds-avatar_circle slds-m-bottom_medium">
-                    <abbr class="slds-avatar__initials slds-icon-standard-user" title="Vignesh">V</abbr>
-                </span>
-                <h1 class="slds-text-heading_large slds-m-bottom_none">Hi, I'm Vignesh (Vicki)</h1>
-                <p class="slds-text-heading_small slds-text-color_success slds-m-bottom_small">Creator of <strong>Salesforce 4 All (SF4A)</strong></p>
-                <p class="slds-text-body_regular slds-text-color_weak slds-max-width_medium slds-m-horizontal_auto">
-                    Welcome to my live ecosystem hub. I build custom Salesforce solutions, document my code contributions, and make Salesforce concepts accessible to everyone through my projects and tutorials.
-                </p>
-                <div class="slds-m-top_medium">
-                    <a href="https://linkedin.com" target="_blank" class="slds-button slds-button_brand slds-m-right_x-small">LinkedIn Profile</a>
-                    <a href="YOUR-YOUTUBE-LINK" target="_blank" class="slds-button slds-button_outline-brand">Watch SF4A on YouTube</a>
+    <!-- MAIN BODY -->
+    <main class="slds-container_large slds-container_center slds-p-horizontal_medium slds-p-vertical_xx-large">
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="slds-m-bottom_xx-large">
+            <h2 class="slds-text-heading_large slds-m-bottom_medium slds-border_bottom slds-p-bottom_small">Skills & Tools</h2>
+            <div class="slds-grid slds-wrap slds-gutters_direct">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                    <div class="slds-box slds-theme_default">
+                        <h3 class="slds-text-heading_small slds-m-bottom_small">Configuration</h3>
+                        <span class="slds-badge slds-theme_success slds-m-around_xx-small">Advanced Flow Builder</span>
+                        <span class="slds-badge slds-theme_success slds-m-around_xx-small">User Management</span>
+                        <span class="slds-badge slds-theme_success slds-m-around_xx-small">Security Architecture</span>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                    <div class="slds-box slds-theme_default">
+                        <h3 class="slds-text-heading_small slds-m-bottom_small">Development</h3>
+                        <span class="slds-badge slds-theme_info slds-m-around_xx-small">Apex Classes</span>
+                        <span class="slds-badge slds-theme_info slds-m-around_xx-small">Lightning Web Components</span>
+                        <span class="slds-badge slds-theme_info slds-m-around_xx-small">SFDX & Git</span>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <!-- YOUTUBE & RECENT CONTRIBUTIONS SECTION -->
-        <section id="youtube" class="slds-p-horizontal_large">
-            <div class="slds-grid slds-gutters slds-wrap">
-                <!-- Card example for your YouTube channel -->
-                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="slds-m-bottom_xx-large">
+            <h2 class="slds-text-heading_large slds-m-bottom_medium slds-border_bottom slds-p-bottom_small">Featured Projects</h2>
+            <div class="slds-grid slds-wrap slds-gutters">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
                     <article class="slds-card">
-                        <div class="slds-card__header slds-grid">
-                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
-                                <div class="slds-media__body">
-                                    <h2 class="slds-card__header-title">
-                                        <span>🎥 Latest from SF4A</span>
-                                    </h2>
-                                </div>
-                            </header>
-                        </div>
-                        <div class="slds-card__body slds-card__body_inner">
-                            Sharing hands-on Salesforce learning, solution design, and architectural breakdowns for the Trailblazer community.
+                        <div class="slds-card__body slds-card__body_inner slds-p-top_medium">
+                            <h3 class="slds-text-heading_small"><strong>Custom Optimization Engine</strong></h3>
+                            <p class="slds-m-vertical_small">A technical layout showcasing native declarative solutions and system enhancements.</p>
+                            <a href="#" class="slds-button slds-button_neutral">View Repository</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- FOOTER -->
-    <footer class="slds-p-around_large slds-text-align_center slds-text-color_weak slds-m-top_xx-large">
-        <p>© 2026 Vignesh. Built with Salesforce Lightning Design System 2.</p>
+    <footer class="slds-text-align_center slds-p-vertical_large slds-border_top slds-theme_default">
+        <p class="slds-text-color_weak">© 2026 SF4A. Built using Salesforce Lightning Design System.</p>
     </footer>
 
 </body>
